@@ -16,7 +16,7 @@ const NEZHA_PORT = process.env.NEZHA_PORT || '443';        // 端口为443时自
 const NEZHA_KEY = process.env.NEZHA_KEY || '';             // 哪吒三个变量不全不运行
 const DOMAIN = process.env.DOMAIN || '';  //项目域名或已反代的域名，不带前缀，建议填已反代的域名
 const NAME = process.env.NAME || 'JP-webhostmost-GCP';
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 1984;  //不要3000,应该被占用了
 
 // 创建HTTP路由
 const httpServer = http.createServer((req, res) => {
